@@ -41,3 +41,13 @@ for amount in amounts:
 print(sum)
 totalAmount = int(driver.find_element_by_class_name("totAmt").text)
 assert sum == totalAmount
+
+for num in range(1,101):
+if num %3 == 0 and num %5 == 0:
+print("FizzBuzz")
+elif num %3 == 0:
+print("Fizz")
+elif num %5 ==0:
+print("Buzz")
+else:
+print(num)
